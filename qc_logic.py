@@ -41,3 +41,15 @@ def get_transformation_matrix(theta, phi):
 
 def apply_gate(gate, state):
  return gate @ state
+
+def decompose_matrix(matrix):
+ a = matrix[1,1]
+ b = matrix [1,2]
+ c = matrix [2,1]
+ d = matrix [2,2]
+
+ gamma = 2*np.arctan(np.abs(b) / np.abs(a))
+ 
+
+def add_gate():
+ pass
